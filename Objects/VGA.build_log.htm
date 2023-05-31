@@ -1,0 +1,96 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Mikolaj Pienko, AGH UST, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.4.0
+Target DLL:      Segger\JL2CM3.dll V2.99.40.0
+Dialog DLL:      TARMCM1.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Users\Micza\Downloads\vga (1)\vga\VGA.uvprojx
+Project File Date:  01/20/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling font.c...
+assembling startup_MKL05Z4.s...
+compiling vga.c...
+vga.c(146): warning:  #1-D: last line of file ends without a newline
+  }
+vga.c: 1 warning, 0 errors
+compiling tim.c...
+compiling main.c...
+main.c(91): warning:  #177-D: variable "temp"  was declared but never referenced
+  	uint8_t temp =0;
+main.c: 1 warning, 0 errors
+compiling tsi.c...
+compiling system_MKL05Z4.c...
+compiling game.c...
+game.c(102): warning:  #223-D: function "sprintf" declared implicitly
+  						sprintf(txtBuf, "Missed  %d/5", misses);
+game.c(57): warning:  #177-D: variable "b"  was declared but never referenced
+  	double b = 0;
+game.c(58): warning:  #177-D: variable "ready"  was declared but never referenced
+  	unsigned char ready = 0;
+game.c(408): warning:  #1-D: last line of file ends without a newline
+  }
+game.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=5444 RO-data=1088 RW-data=36 ZI-data=4044  
+".\Objects\VGA.axf" - 0 Error(s), 6 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: SPI Version: 2.3.0
+   * Component: Custom Version: 1.0.0
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.Kinetis_KLxx_DFP.1.15.0.pack
+                Keil.Kinetis_KLxx_DFP.1.15.0
+                NXP Kinetis KLxx Series Device Support and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\Micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\Micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include
+  C:\Users\Micza\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::CMSIS Driver:SPI:2.3.0 (API)
+      Include file:  CMSIS\Driver\Include\Driver_SPI.h
+
+   * Component: ARM::CMSIS Driver:SPI:Custom:1.0.0
+      Source file:   CMSIS\Driver\DriverTemplates\Driver_SPI.c
+      Include file:  CMSIS\Driver\Include\Driver_SPI.h
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\ARM\startup_MKL05Z4.s
+      Source file:   Device\Source\system_MKL05Z4.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
